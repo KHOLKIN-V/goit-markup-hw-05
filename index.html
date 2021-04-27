@@ -13,6 +13,14 @@
 </head>
 
 <body>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="modal-close" data-modal-close>X</button>
+            <p>
+        
+            </p>
+        </div>        
+    </div>
     <header class="header">
         <div class="container">
             <nav class="navig">
@@ -42,7 +50,7 @@
         <!-- HERO -->
         <section class="hero-container">
             <h1 class="hero-slogan">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="hero-button">Заказать услугу</button>
+            <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
         </section>
         <!-- /HERO -->
 
@@ -98,9 +106,24 @@
             <div class="container">
                 <h2 class="h2-web">Чем мы занимаемся</h2>
                 <ul class="list-no-style ">
-                    <li><img src="./images/about1.jpg" alt="picture about us" width="370" height="294"></li>
-                    <li><img src="./images/about2.jpg" alt="picture about us" width="370" height="294"></li>
-                    <li><img src="./images/about3.jpg" alt="picture about us" width="370" height="294"></li>
+                    <li>
+                        <img src="./images/about1.jpg" alt="picture about us" width="370" height="294">
+                        <div class="about-description">
+                            ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./images/about2.jpg" alt="picture about us" width="370" height="294">
+                        <div class="about-description">
+                            МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./images/about3.jpg" alt="picture about us" width="370" height="294">
+                        <div class="about-description">
+                            ДИЗАЙНЕРСКИЕ РЕШЕНИЯ
+                        </div>
+                    </li>
                 </ul>
             </div>
             
@@ -326,6 +349,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
