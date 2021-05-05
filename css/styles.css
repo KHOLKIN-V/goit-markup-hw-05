@@ -220,12 +220,14 @@ body {
   width: 16px;
   height: 12px;
   margin-right: 10px;
+  transition: fill 250ms var(--timing-function);
 }
 .navig-address .address-phone {
   fill: var(--primary-text-color);
   width: 10px;
   height: 16px;
   margin-right: 10px;
+  transition: fill 250ms var(--timing-function);
 }
 .address-link:hover {
   color: var(--accent-color);
